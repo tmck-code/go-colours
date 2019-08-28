@@ -25,6 +25,22 @@ var (
 	LightCyan   = Colour{Name: "LightCyan", Fmt: "[1;36m"}
 	White       = Colour{Name: "White", Fmt: "[1;37m"}
 	All         = []Colour{
-		Red, Green,
+
+		Red,
+		Black,
+		Green,
+		Brown,
+		Blue,
+		Purple,
+		Cyan,
+		Gray,
+		DarkGray,
+		LightRed,
+		LightGreen,
+		Yellow,
+		LightBlue,
+		LightPurple,
+		LightCyan,
+		White,
 	}
 )
