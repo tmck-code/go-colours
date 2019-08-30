@@ -52,3 +52,6 @@ var (
 func CPrintln(c Colour, s string) {
 	fmt.Printf("\033%s%v\033[0m\n", c.Fmt, s)
 }
+func CPrint(c Colour, s string) {
+	fmt.Printf("\033%s%v\033[0m", c.Fmt, s)
+}
