@@ -1,4 +1,4 @@
-package main
+package Colours
 
 import (
 	"fmt"
@@ -29,7 +29,7 @@ var (
 	LightCyan   = Colour{Fmt: "[1;36m", Name: "LightCyan"}
 	White       = Colour{Fmt: "[1;37m", Name: "White"}
 
-	AllColours = []Colour{
+	All = []Colour{
 		Red,
 		Black,
 		Green,
@@ -50,14 +50,5 @@ var (
 )
 
 func CPrintln(c Colour, s string) {
-	fmt.Printf("\033%s%s\033[0m\n", c.Fmt, s)
-}
-
-func main() {
-	fmt.Printf("%-12s | %s\n", "Name", "Example")
-	fmt.Println("----------------------------")
-	for _, c := range AllColours {
-		fmt.Printf("%-12s | ", c.Name)
-		CPrintln(c, c.Name)
-	}
+	fmt.Printf("\033%s%v\033[0m\n", c.Fmt, s)
 }
